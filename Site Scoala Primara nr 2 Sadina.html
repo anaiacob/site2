@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Școala Primară nr. 2 Sadina</title>
+    <style>
+	body {
+            font-family: Open Sans, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007F73;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+	.change-button {
+        padding: 30px 60px;
+        margin: 10px;
+        cursor: pointer;
+	font-family: Open Sans, sans-serif;
+        background-color: #007F73;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+		
+.change-button1
+{
+	padding: 30px 60px;
+        margin: 10px;
+        cursor: pointer;
+	font-family: Open Sans, sans-serif;
+        background-color: #A3D8FF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+
+}
+.change-button2
+{
+	padding: 30px 60px;
+        margin: 10px;
+        cursor: pointer;
+	font-family: Open Sans, sans-serif;
+        background-color: #FF55BB;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+
+}
+.change-button3
+{
+	padding: 30px 60px;
+        margin: 10px;
+        cursor: pointer;
+	font-family: Open Sans, sans-serif;
+        background-color: #B2A4FF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+
+}
+.change-button4
+{
+	padding: 30px 60px;
+        margin: 10px;
+        cursor: pointer;
+	font-family: Open Sans, sans-serif;
+        background-color: #C0EEE4;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+
+}
+
+
+
+
+    .page {
+        display: none; 
+        padding: 20px;
+    }
+    .img-and-title img {
+      float: left; /* Plasează imaginea la stânga */
+      margin-left: 50px;
+      margin-right: -30px; /* Adaugă un spațiu mic între imagine și text */
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Adaugă umbre */
+      border-radius: 5px; /* Ajustează valoarea pentru a schimba raza de curbură */
+
+    }
+.img1
+{
+	float: left; /* Plasează imaginea la stânga */
+      margin-left: 50px;
+      margin-right: 50px; /* Adaugă un spațiu mic între imagine și text */
+      box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Adaugă umbre */
+      border-radius: 5px; /* Ajustează valoarea pentru a schimba raza de curbură */
+
+
+}
+    /* Stilizare pentru titlu */
+    .img-and-title h1 {
+      margin-top: 0; /* Elimină margin-top pentru a alinia titlul cu imaginea */
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    }
+.img-and-title h2
+{
+	margin-top: 0;
+	text-align: right;
+	font-family: Open Sans, sans-serif;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.text h1
+{
+	text-align: center;
+	font-family: Open Sans, sans-serif;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+}
+	.text p
+{
+	font-family: Open Sans, sans-serif;
+	margin-left: 10px;
+	margin-right: 25px;
+	
+}
+.text1 h2
+{
+	text-align: center;
+	font-family: Open Sans, sans-serif;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+}
+	.text1 p
+{
+	font-family: Open Sans, sans-serif;
+	margin-top: 0px;
+	margin-left:70px;
+	margin-right:70px;
+	text-align: center;
+	
+}
+.text1 h3
+{
+	text-align: center;
+	font-family: Open Sans, sans-serif;
+	text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+
+}
+a
+{
+	color: #31E1F7;
+}
+p
+{
+	margin-right: 1cm;
+	margin-left: 1cm;
+}
+.imagine-stanga-telefon img
+{
+	float: right;
+	margin-left: -200px;
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Adaugă umbre */
+	margin-right: 120px;
+	margin-top: 0px;
+	margin-up: 0px;
+}
+.imagine-stanga-telefon h4
+{
+	margin-top: 0px;
+	
+}
+.imagine-stanga-mail img
+{
+	float: left;
+	margin-top: 0px;
+	margin-up: 0px;
+	margin-left: 50px;
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Adaugă umbre */
+	margin-right: 30px;
+
+}
+.imagine-stanga-mail a
+{
+	margin-top: 0px;
+}
+
+.container {
+     display: flex; /* Utilizăm flexbox pentru a alinia elementele pe același rând */
+    justify-content: right; /* Aliniem elementele pe orizontală în centru */
+    align-items: right;
+  } 
+.p1
+{
+	margin-right: 1cm;
+	margin-left: 0.5cm;
+}
+.box {
+    margin-right: 30px;
+    margin-top: 50px;
+    width: 230px;
+    height: 230px;
+    transition: width 0.5s, height 0.5s; /* Efect de tranziție pentru mărime */
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Adaugă umbre */
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  .box:hover {
+    width: 250px; /* Mărimea mărită la atingere */
+    height: 250px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5); /* Adaugă umbre */
+    border-radius: 5px;
+    display: inline-block;
+  }
+.blue{
+background-color: #A3D8FF;
+}
+.pink
+{
+background-color:#FF55BB;
+}
+.purple
+{
+background-color:#B2A4FF;
+}
+.mint
+{
+background-color:#C0EEE4;
+}
+.box img
+{
+    max-width: 30%;
+    max-height: 30%;
+    margin-left: 80px;
+}
+.slide-in-left {
+    position: relative;
+    animation: slideInLeft 3s ease forwards;
+    opacity: 0; /* Setează opacitatea inițială la 0 */
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%); /* Deplasează elementul în afara ecranului în stânga */
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0); /* Aduce elementul în poziția sa finală pe pagină */
+    }
+  }
+.visual-list {
+    list-style: none;
+    padding: 0;
+}
+
+.visual-list li {
+    margin-bottom: 20px;
+}
+
+.list-item {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.list-item:hover {
+    transform: translateY(-5px);
+}
+
+.list-item h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.list-item p {
+    margin: 0;
+    font-size: 16px;
+}
+table {
+        width: 100%;
+        border-collapse: collapse; /* combină marginile celulelor */
+    }
+
+    th, td {
+        border: 1px solid black; /* adaugă margini celulelor */
+        padding: 8px; /* adaugă spațiu între conținut și marginile celulelor */
+        text-align: left; /* aliniază textul la stânga în celule */
+	background-color: #F2F2F0;
+    }
+
+    th {
+        background-color: #F3CA52; /* culoare de fundal pentru antet */
+    }
+.imagine-filtru img{
+	margin-up: 550px;
+	margin-left: 5px;
+	box-shadow: 3px 3px 75px rgba(0, 0, 0, 0.35); /* Adaugă umbre */
+	margin-top: 0;
+	border-radius: 0px; /* Ajustează valoarea pentru a schimba raza de curbură */
+
+	
+    }
+.imagine-filtru1 img{
+	margin-up: 550px;
+	margin-left: 7px;
+	box-shadow: 30px 10px 75px rgba(0, 0, 0, 0.35); /* Adaugă umbre */
+	margin-top: 0px;
+	border-radius: 0px; /* Ajustează valoarea pentru a schimba raza de curbură */
+	
+	
+    }
+.imagine-filtru2 img{
+	margin-up: 550px;
+	margin-left: 15px;
+	box-shadow: 30px 10px 75px rgba(0, 0, 0, 0.35); /* Adaugă umbre */
+	margin-top: 0px;
+	border-radius: 0px; /* Ajustează valoarea pentru a schimba raza de curbură */
+	
+	
+    }
+
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="imagine-stanga-telefon">
+		<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/phone_PNG48988-removebg-preview.png?raw=true" width="30" height="30">
+		<h4><strong>0246 266 062</strong><h4></div>
+<div class="imagine-stanga-mail">
+ 
+<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/mail_icon-removebg-preview.png?raw=true" width="30" height="30">
+		<a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhpdKZMQTtlLxMchnLsBhTxTCBqSZlcndsccVMhTqlgLMcSHcRxrGBcJzGNQDqXJVddRhR"> scoala_roatadejos@yahoo.co.uk</a> 
+</div>
+</div>
+	
+	<header>
+	<div class="img-and-title">
+ 		 <img src="https://github.com/sitescoala/imagini-site/blob/main/Logo.jpg?raw=true" width="150" height="112.5">
+		<h1><em><strong>Școala Primară numărul 2 Sadina</strong></em></h1>
+  
+	</div>
+        <nav>
+		<button class="change-button" onclick="showPage('home')">Acasă</button>
+		<button class="change-button" onclick="showPage('education')">Educație</button>
+		<button class="change-button" onclick="showPage('events')">Activități extrașcolare</button>
+		<button class="change-button" onclick="showPage('about')">Despre noi</button>
+		
+        </nav>
+
+    </header>
+
+<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Ca%20%C8%99i%20florile,%20copiii%20%C3%AEnfloresc%20%C3%AEntr-o%20lume%20plin%C4%83%20de%20iubire,%20lumin%C4%83%20%C8%99i%20%C3%AEn%C8%9Belegere,%20aduc%C3%A2nd%20culoare%20%C8%99i%20bucurie%20%C3%AEn%20fiecare%20zi..png?raw=true" width="1140" height="450">
+
+<div id="home" class="page">
+
+<div class="text1">
+	<h3><em>~Bine ați venit pe pagina web a Școlii Primare nr. 2 Sadina!~</em></h3>
+	</div>
+	
+	<br>
+	<br>
+
+<div class="p1">
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suntem încântați să vă întâmpinăm în mediul virtual al școlii noastre, un loc în care fiecare copil este încurajat să își descopere potențialul și să crească într-un mediu sigur și stimulativ. Aici, punem accent pe educația integrală, oferind elevilor noștri nu doar cunoștințe academice solide, ci și valori și abilități pentru viață.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Școala noastră promovează excelenta în educație prin intermediul unei echipe de cadre didactice dedicate și a unor programe educative inovatoare. Elevii noștri beneficiază de o gamă variată de activități extracurriculare și proiecte care îi încurajează să își dezvolte creativitatea, spiritul de echipă și gândirea critică.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pe pagina noastră web, veți găsi informații utile despre programul școlar, evenimente și activități curente, precum și resurse pentru părinți și elevi. Vă invităm să explorați și să descoperiți mai multe despre viața școlii noastre și despre modul în care ne implicăm în educarea și formarea generațiilor viitoare.
+<br><br><hr><hr><br>
+</div>
+</div>
+
+
+
+<div id="education" class="page">
+	<div class="text1">
+	<h3><em>~PROFESORI~</em></h3>
+	</div>
+	
+	<br>
+	<br>
+
+	<ul class="visual-list">
+<li>
+        <div class="list-item">
+            <h4>Clasa Pregătitoare- Profesor învățământ primar Boroi Mirela Cătălina
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Clasa I – Profesor învățământ primar Oprea Mihaela 
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Clasa a II-a  – Profesor învățământ primar Crăcan Gabriela
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Clasa a II-a  – Profesor învățământ primar Postică Steluța
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Clasa a III-a – Profesor învățământ primar Țoghină Alina
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Clasa a IV-a – Profesor învățământ primar Moșteanu Mădălina
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Limba engleză- Profesor Orza Veronica
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Religie- Profesor Bugeac Violeta 
+</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Educație fizică – Stanciu Florian
+</h4>
+        </div>
+    </li>
+	</ul>
+<br><br><hr><hr><br>
+<div class="text1">
+	<h3><em>~ORAR~</em></h3>
+	</div>
+	
+	<br>
+	<br>
+	<table>
+    <thead>
+        <tr>
+	    <th>Clasa</th>
+            <th>Luni</th> 
+            <th>Marți</th>
+            <th>Miercuri</th>
+	    <th>Joi</th>
+	    <th>Vineri</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>CP (Boroi Mirela)</td>
+            <td>
+<ol>
+<li>DP</li>
+<li>CLR</li>
+<li>MEM</li>
+<li>EFS</li>
+</ol>
+	    </td>
+            <td>
+<ol>
+<li>ENGLEZĂ</li>
+<li>RELIIE</li>
+<li>CLR</li>
+<li>MEM</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>MEM</li>
+<li>EFS</li>
+<li>MM</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>MEM</li>
+<li>EFS</li>
+<li>MM</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>AVAP</li>
+<li>AVAP</li>
+
+</ol>
+</td>
+        </tr>
+        <tr>
+            <td>Clasa I (Oprea Mihaela)</td>
+            <td>
+<ol>
+<li>CLR</li>
+<li>MM</li>
+<li>MEM</li>
+<li>EFS</li>
+
+</ol>
+</td>
+            <td>
+<ol>
+<li>RELIGIE</li>
+<li>ENGLEZĂ</li>
+<li>CLR</li>
+<li>MEM</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>CLR</li>
+<li>MEM</li>
+<li>EFS</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>CLR</li>
+<li>MEM</li>
+<li>MM</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>AVAP</li>
+<li>AVAP</li>
+<li>DP</li>
+
+</ol>
+</td>
+        </tr>
+	<tr>
+            <td>Clasa a II-a (Cracan Gabriela & Postica Steluta)</td>
+            <td>
+<ol>
+<li>MM</li>
+<li>CLR</li>
+<li>MEM</li>
+<li>EFS</li>
+
+</ol>
+</td>
+            <td>
+<ol>
+<li>MEM</li>
+<li>CLR</li>
+<li>RELIGIE</li>
+<li>ENGLEZĂ</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>CLR</li>
+<li>MEM</li>
+<li>MM</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>MEM</li>
+<li>CLR</li>
+<li>DP</li>
+<li>EFS</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>CLR</li>
+<li>MEM</li>
+<li>AVAP</li>
+<li>AVAP</li>
+
+</ol>
+</td>
+        </tr>
+	<tr>
+            <td>Clasa a III-a (Toghina Alina)</td>
+            <td>
+<ol>
+<li>JOC ȘI MIȘCARE</li>
+<li>LB. ROMÂNĂ</li>
+<li>ENGLEZĂ</li>
+<li>MATEMATICĂ</li>
+
+</ol>
+</td>
+            <td>
+<ol>
+<li>ENGLEZĂ</li>
+<li>RELIGIE</li>
+<li>MATEMATICĂ</li>
+<li>LB. ROMÂNĂ</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>LB. ROMÂNĂ</li>
+<li>MM</li>
+<li>MATEMATICĂ</li>
+<li>EFS</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>LB. ROMÂNĂ</li>
+<li>ȘTIINȚE ALE NATURI</li>
+<li>MATEMATICĂ</li>
+<li>EFS</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>ED. CIVICĂ</li>
+<li>AVAP</li>
+<li>LB. ROMÂNĂ</li>
+<li>AVAP</li>
+
+</ol>
+</td>
+        </tr>
+	<tr>
+            <td>Clasa a IV-a (Mosteanu Madalina)</td>
+            <td>
+<ol>
+<li>LB. ROMÂNĂ</li>
+<li>MATEMATICĂ</li>
+<li>ISTORIE</li>
+<li>ENGLEZĂ</li>
+
+</ol>
+</td>
+            <td>
+<ol>
+<li>LB. ROMÂNĂ</li>
+<li>MATEMATICĂ</li>
+<li>RELIGIE</li>
+<li>ENGLEZĂ</li>
+<li>MM</li>
+</ol>
+</td>
+	    <td>
+<ol>
+<li>LB. ROMÂNĂ</li>
+<li>MATEMATICĂ</li>
+<li>EFS</li>
+<li>JOC ȘI MIȘCARE</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>LB. ROMÂNĂ</li>
+<li>LB. ROMÂNĂ</li>
+<li>MATEMATICĂ</li>
+<li>ED. CIVICĂ</li>
+
+</ol>
+</td>
+	    <td>
+<ol>
+<li>ȘTIINȚE</li>
+<li>EFS</li>
+<li>AVAP</li>
+<li>GEOGRAFIE</li>
+
+</ol>
+</td>
+        </tr>
+
+    </tbody>
+</table>
+<br><br><hr><hr><br>
+</div>
+
+
+
+<div id="events" class="page">
+	
+	<div class="text1">
+	<h3><em>~Arta, Sportul și Aventura: Esențiale pentru Elevii din Ciclul Primar~</em></h3>
+	</div>
+	
+	<br>
+	<br>
+	<div class="p1">
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În vreme ce școala servește ca un far al cunoașterii, implicarea activă a elevilor de ciclu primar adaugă o dimensiune esențială în procesul lor educativ. Prin participarea la activități școlare și extrașcolare, copiii nu numai că își dezvoltă abilități academice, ci și aptitudini sociale și emoționale.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pe măsură ce se angajează în proiecte școlare, precum concursuri de științe sau teatru, elevii își exersează gândirea critică și rezolvarea de probleme, calități cruciale pentru viitorul lor. În plus, aceste activități îi ajută să-și descopere pasiunile și să-și exploreze interesele, ceea ce poate duce la descoperirea unor talente neașteptate.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Implicarea în activități extrașcolare, cum ar fi sporturile sau cluburile de artă, oferă beneficii la fel de importante. Prin intermediul acestor activități, elevii învață disciplină, cooperare și gestionarea timpului. Mai mult, aceste experiențe îi ajută să-și dezvolte stima de sine și încrederea în propriile abilități.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În final, implicarea activă a elevilor de ciclu primar în activități școlare și extrașcolare nu numai că îmbogățește experiența lor educațională, ci îi pregătește și pentru provocările viitoare. Prin intermediul acestor oportunități, copiii devin nu doar învățători, ci și constructori ai propriului lor viitor.
+	</div>
+
+	<div class="box blue">
+		<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/R-removebg-preview.png?raw=true">
+		<button class="change-button1" onclick="showPage('school programs')"><h4>Programe extrașcolare</h4></button>
+		
+	</div>
+	<div class="box pink">
+		<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/f2f9eef9a4ba0112e098b8a3b400c41c-removebg-preview.png?raw=true">
+		<button class="change-button2" onclick="showPage('trips')"><h4> Excursii & Tabere</h4></button>
+	</div>
+	<div class="box purple">
+		<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/images-removebg-preview.png?raw=true">
+		<button class="change-button3" onclick="showPage('partners')"><h4>Parteneriate școlare</h4></button>
+	</div>
+	<div class="box mint">
+		<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/pngtree-hand-drawn-cartoon-education-information-ruler-illustration-png-image_5368452-removebg-preview.png?raw=true">
+		<button class="change-button4" onclick="showPage('activities')"><h4>Activități în cadrul școlii</h4></button>
+
+	</div>
+<br><br><br><hr><hr>
+<br>
+</div>
+<div id="school programs" class="page">
+	<div class="slide-in-left">
+ 	
+    		<div class="text1">
+			<h3><em>~Descoperind Eroul din Spatele Uniformei: Vizita Elevilor la Pompieri~</em></h3><br><br>
+</div>
+			<div class="p1">
+<div class="img-and-title img1">
+<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture51.jpg?raw=true" width="100" height="70"></div>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Peste 50 de școlari de la Școala Primară nr 2 Sadina- Școala Gimnazială nr. 1 din Roata de Jos au mers, în această dimineață, în vizită la pompieri. Ei și-au dorit să petreacă prima zi din „Școala Altfel” alături de salvatorii care au subunitatea în localitatea lor deoarece au auzit de intervențiile la care au participat și de oamenii pe care i-au ajutat de-a lungul timpului. 
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În timpul vizitei lor la unitatea de pompieri, copiii au fost întâmpinați cu zâmbete calde și cu o atmosferă plină de entuziasm din partea echipei de salvatori. Aceștia au avut ocazia să pună întrebări și să afle mai multe detalii despre activitatea zilnică a pompierilor, fiind captivați de povestirile lor despre intervențiile de urgență și misiunile de salvare.<br>
+<div class="img-and-title img1">
+<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture48.png?raw=true" width="130" height="100"></div>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În plus, au avut parte de o demonstrație practică despre modul în care se utilizează echipamentele de intervenție în caz de incendiu. Pompierii le-au explicat fiecare element al echipamentului și importanța utilizării corecte a acestuia în situații critice. Copiii au fost încântați să vadă cum funcționează echipamentele și au fost încurajați să încerce și ei câteva elemente, sub supravegherea atentă a pompierilor.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Printre momentele memorabile ale vizitei s-au numărat și demonstrațiile de utilizare a furtunurilor de stingere a incendiilor. Cu ochii mari și plini de curiozitate, copiii au urmărit fiecare mișcare a pompierilor în timp ce aceștia demonstrau tehnicile corecte de utilizare a furtunurilor. Cei mai îndrăzneți dintre ei au dorit să încerce și ei această experiență, sub atenta supraveghere a personalului specializat.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pe lângă aspectele practice, copiii au fost încurajați să înțeleagă și importanța prevenirii incendiilor și a comportamentului responsabil în situații de urgență. Pompierii le-au vorbit despre măsurile de siguranță pe care trebuie să le respecte acasă și în comunitatea lor, încurajându-i să devină promotori ai unei culturi a prevenirii și siguranței.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vizita la pompieri a reprezentat nu doar o oportunitate de divertisment și explorare pentru copii, ci și o lecție valoroasă despre importanța solidarității, responsabilității și pregătirii în fața situațiilor de urgență. Aceștia au plecat acasă cu amintiri plăcute și cu o mai mare înțelegere a rolului crucial pe care îl au pompierii în comunitatea lor.
+<br><br><br>
+			</div>
+<hr><hr>
+<br>
+  	</div>
+<div class="slide-in-left">
+<div class="text1">
+			<h3><em>~Carnavalul toamnei~</em></h3><br><br>
+</div>
+			<div class="p1">
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sfârșitul lunii octombrie a fost marcat în localitatea noastră de un eveniment ce ne dorim să devină tradiție - Carnavalul Toamnei. Mulțumim tuturor părinților pentru implicarea de care au dat dovadă, mulțumim copiilor care au fost foarte entuziaști și, nu în ultimul rând, mulțumim tuturor celor care ne-au vizitat și au cumpărat din produsele noastre. Astăzi, inimile comunității noastre au bătut în tandem!
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carnavalul Toamnei a fost o sărbătoare a culorilor, a veseliei și a solidarității. Odată cu venirea toamnei, am simțit că este momentul potrivit să celebrăm bogăția acestei perioade a anului și să aducem o rază de bucurie în viețile noastre. Cu toții ne-am mobilizat pentru a organiza un eveniment de neuitat, care să aducă împreună întreaga comunitate.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parcul central s-a transformat într-un tărâm al povestilor, cu standuri decorate cu fructe de toamnă, flori și frunze colorate. Atmosfera plină de energie și entuziasm a fost întreținută de către copiii noștri, care au participat la diverse activități și spectacole pregătite special pentru ei. Costumele de toamnă, inspirate din natură, au adus un strop de magie în cadrul evenimentului, iar micuții s-au bucurat să se distreze alături de prieteni și familie.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În centrul atenției s-au aflat și produsele locale, preparate cu dragoste și îndemânare de către părinții și voluntarii noștri. De la dulciuri tradiționale până la bunătăți sănătoase, fiecare stand a oferit o varietate bogată de gusturi și arome specifice toamnei. Vizitatorii au avut ocazia să se delecteze cu delicatese locale și să susțină în același timp cauza noastră, știind că toate fondurile strânse vor fi folosite pentru achiziționarea unor lucruri necesare în școală. Produsele rămase au fost donate cu drag unor persoane nevoiașe, reflectând spiritul generos al comunității noastre.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Carnavalul Toamnei nu a fost doar un eveniment de divertisment, ci și o oportunitate de a uni oamenii în jurul unei cauze comune și de a aduce un zâmbet pe chipurile celor din jur. Ne-am simțit binecuvântați să facem parte dintr-o comunitate atât de solidară și plină de viață și suntem nerăbdători să continuăm tradiția în anii ce vor urma.
+</div>
+
+</div>
+<br><br><hr><hr><br>
+<div class="imagine-filtru2">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture39.jpg?raw=true" width="250" height="270">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture40.jpg?raw=true" width="250" height="270">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture38.png?raw=true" width="250" height="270">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture41.jpg?raw=true" width="250" height="270">
+</div>
+
+<br><br><hr><hr><br>
+
+</div>
+
+<div id="trips" class="page">
+	<div class="slide-in-left">
+<div class="text1">
+
+			<h3><em>~EXCURSIE PARC COMANA- 2022~</em></h3><br><br>
+</div>
+			<div class="p1">
+<br>
+<div class="img-and-title img1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture30.jpg?raw=true" width="475" height="630">
+</div>
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În anul 2022, elevii claselor primare de la Școala Sadina au avut parte de o experiență de neuitat în cadrul excursiei lor la Parcul Comana. Acest paradis natural, situat în inima Deltei Neajlovului, le-a oferit oportunitatea de a se conecta cu natura și de a descoperi frumusețile sale pitorești.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cu entuziasm și curiozitate, copiii au pornit în aventura lor, îmbarcându-se pe trenulețul pitoresc ce îi va conduce prin peisaje fermecătoare și natură sălbatică. Cu fiecare răsucire a șinelor, au avut ocazia să admire diversitatea florei și faunei locale, observând păsările rare ce își găsesc adăpost în aceste meleaguri și înfrumusețându-și privirea cu peisaje deosebite.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Odată ajunși la destinație, elevii au fost întâmpinați de atmosfera captivantă a Parcului Comana. Împreună cu ghizii lor experimentați, au pornit într-o expediție de descoperire a fascinantului ecosistem al Deltei Neajlovului. Fiecare pas a fost însoțit de noi cunoștințe și de întrebări care i-au îndemnat să exploreze și să înțeleagă mai bine lumea naturală din jurul lor.
+
+<br>
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pe lângă plimbările prin pădure și explorarea terenurilor, copiii au avut parte și de experiențe mai îndrăznețe. Traseele prin copaci și tiroliana ce trecea deasupra lacului au fost provocările care le-au oferit doze de adrenalină și senzații tari. Cu inima plină de curaj, au traversat obstacolele naturale cu zâmbetul pe buze și cu dorința de a experimenta cât mai mult din farmecul aventurii.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ziua petrecută în Parcul Comana a fost una de neuitat, marcată de râsete, explorare și conexiune cu natura. Aerul curat și peisajele idilice au oferit copiilor o pauză bine meritată de la agitația vieții de zi cu zi și i-au încărcat cu energie pozitivă și inspirație pentru viitor.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Întorcându-se acasă, elevii au adus cu ei nu doar amintiri frumoase, ci și o mai mare apreciere pentru frumusețea naturii și pentru necesitatea protejării ei. Excursia lor la Parcul Comana din 2022 a fost mai mult decât o simplă călătorie - a fost o lecție de viață și de conectare cu lumea din jurul lor.
+<br><br><br><hr><hr>
+
+<div class="imagine-filtru1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture32.jpg?raw=true" width="200" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture33.jpg?raw=true" width="200" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture34.jpg?raw=true" width="190" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture35.jpg?raw=true" width="190" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture36.jpg?raw=true" width="190" height="210">
+
+</div>
+
+<br><br><hr><hr><br>
+
+</div>
+</div>
+
+<div class="slide-in-left">
+<div class="text1">
+			<h3><em>~TABĂRA INIMAGICA 16.07.2022-22.07.2022~</em></h3>
+			<h3><em>~Săcuieu, Muntii Apuseni, jud. Cluj~</em></h3>
+<br><br>
+</div>
+			<div class="p1">
+<br>
+<div class="img-and-title img1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture25.png?raw=true" width="350" height="550">
+</div>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În perioada 16.07.2022 - 22.07.2022, în minunata localitate Săcuieu, situată în inima Munților Apuseni din județul Cluj, s-a desfășurat Tabăra IniMagica. Această oază de aventură și bucurie a fost locul unde copiii au trăit experiențe de neuitat și au descoperit magia vieții în natură.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tabăra IniMagica a fost mai mult decât un simplu loc de vacanță - a fost un spațiu plin de energie pozitivă și de activități captivante. Fiecare zi a fost plină de mișcare și de bucurie, iar copiii au avut oportunitatea de a se bucura de aerul curat al munților și de apa proaspătă de izvor, ceea ce i-a ajutat să devină mai conștienți de importanța unui stil de viață sănătos.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activitățile din cadrul taberei au fost variate și adaptate pentru a stimula imaginația și creativitatea copiilor. De la ateliere de creație în aer liber până la jocuri de echipă și activități artistice interactive, fiecare moment a fost plin de entuziasm și de bucurie. Copiii au avut ocazia să exploreze lumea înconjurătoare, să se conecteze cu natura și să descopere talente noi într-un mediu prietenos și relaxant.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Povestea și umorul au fost elemente de bază în cadrul taberei, oferind copiilor o modalitate distractivă și captivantă de a învăța și de a se dezvolta. Prin intermediul diverselor activități desfășurate, fiecare copil a avut șansa să-și descopere pasiuni și abilități noi, să-și facă prieteni și să creeze amintiri de neuitat pentru viața întreagă.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pe lângă distracție și aventură, Tabăra IniMagica a promovat și valorile sănătoase ale vieții, încurajând copiii să adopte un stil de viață activ și echilibrat. Prin participarea la activități fizice și senzoriale, copiii au învățat să aprecieze beneficiile mișcării și să își îmbunătățească abilitățile motorii, contribuind astfel la dezvoltarea lor armonioasă și echilibrată.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În final, Tabăra IniMagica a fost o experiență de neuitat pentru toți cei implicați. Copiii au plecat acasă cu sufletele pline de bucurie, cu amintiri prețioase și cu o mai mare apreciere pentru frumusețea naturii și a vieții în aer liber. Tabăra IniMagica a fost un loc unde magia s-a întâlnit cu aventura și unde copiii au descoperit că fiecare zi poate fi plină de surprize și de momente minunate.
+<br><br><br><hr><hr>
+
+<div class="imagine-filtru1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture23.jpg?raw=true" width="170" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture27.jpg?raw=true" width="200" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture28.png?raw=true" width="210" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture29.png?raw=true" width="220" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture26.png?raw=true" width="190" height="210">
+
+</div>
+
+
+<br><br><hr><hr><br>
+
+</div>
+</div>
+
+<div class="slide-in-left">
+<div class="text1">
+
+			<h3><em>~TABĂRA STRAJA – 27.07.2023 - 01.08.2023~</em></h3>
+			<h3><em>~Straja, Lupeni, jud. Hunedoara~</em></h3>
+<br><br>
+</div>
+			<div class="p1">
+<br>
+ <div class="img-and-title img1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture20.png?raw=true" width="350" height="575">
+</div>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tabăra Straja din perioada 27.07.2023 - 01.08.2023, desfășurată în minunata localitate Straja din Lupeni, județul Hunedoara, a fost un adevărat paradis al aventurii și al explorării pentru copiii din întreaga țară. Încă din primele ore de tabără, aceștia au fost întâmpinați de frumusețea și diversitatea mediului înconjurător.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pârtiile de schi, care în timpul iernii adăpostesc pasionații sporturilor de iarnă, au fost locul perfect pentru activități în aer liber și pentru explorarea peisajelor montane spectaculoase. Crucea Eroilor, simbol al istoriei și tradiției locale, a fost un punct de referință în cadrul taberei, oferind copiilor o oportunitate de a învăța și de a se conecta cu trecutul și valorile culturale ale zonei.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parcurile de aventură au fost pline de provocări și de obstacole pentru copiii dornici de adrenalină și de senzații tari. Fie că au fost vorba despre tiroliane, cățărări sau alte activități de aventură, fiecare moment a fost o ocazie de testare a curajului și de dezvoltare a abilităților fizice și mentale.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Schitul Straja și stâna au reprezentat ocazii de a explora latura spirituală și tradițională a zonei, oferind copiilor oportunitatea de a se conecta cu natura și cu tradițiile locale. Pădurile de fag și de brad au fost spațiile ideale pentru plimbări și explorări, iar vârfurile de peste 2500 de metri, precum Păpușa și Peleaga, au oferit panorame spectaculoase și amintiri de neuitat.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În cadrul taberei, copiii au avut ocazia să se cunoască și să își facă prieteni noi prin intermediul jocurilor și al discuțiilor libere. Jocurile au fost nu doar o sursă de distracție, ci și o modalitate de a dezvolta inteligența, spiritul de echipă și abilitățile sociale ale copiilor.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Echipa taberei a fost formată din specialiști în diverse domenii, precum profesori și antrenori de la UNEFS București, instructori sportivi, monitori de schi, nutriționiști-dieteticeni, psihologi și actori. Cu entuziasmul și dedicarea lor, au contribuit la crearea unei atmosfere pline de energie pozitivă și de bucurie pentru copiii participanți.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tabăra Straja din 2023 a fost mai mult decât o simplă călătorie - a fost o experiență de viață, o oportunitate de a descoperi noi pasiuni și interese, de a face noi prieteni și de a crea amintiri de neuitat în mijlocul naturii și al aventurii.
+<br><br><br><hr><hr>
+
+<div class="imagine-filtru1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture22.jpg?raw=true" width="210" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture21.jpg?raw=true" width="200" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture16.png?raw=true" width="170" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture18.jpg?raw=true" width="200" height="210">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture15.jpg?raw=true" width="210" height="210">
+
+</div>
+
+<br><br><hr><hr><br>
+
+</div>
+</div>
+
+</div>
+
+<div id="partners" class="page">
+	<div class="slide-in-left">
+<div class="text1">
+<div class="img-and-title img1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture8.jpg?raw=true" width="200" height="450">
+</div>
+			<h3><em>~Activități Săptămânale pentru Copii în Parohia Bisericii Adormirea Maicii Domnului~</em></h3>
+			<br><br>
+</div>
+			<div class="p1">
+<br>
+
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În parohia Bisericii Adormirea Maicii Domnului, după fiecare Sfântă Liturghie, se desfășoară săptămânal activități dedicate copiilor, sub coordonarea preotului paroh Stroe Vasile, a cadrelor didactice de la Școala Primară nr 2 Sadina și a comunității de tineri a bisericii noastre. Aceste activități au fost concepute pentru a sprijini dezvoltarea și educația copiilor din comunitatea noastră și pentru a le oferi un mediu sigur și plin de învățare și bucurie.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Principalele activități desfășurate sunt orele de pregătire, axate atât pe limba română, cât și pe matematică, pentru copiii care au nevoie de susținere în aceste domenii. Sub îndrumarea atentă a cadrelor didactice și a voluntarilor, copiii sunt ajutați să înțeleagă și să rezolve temele școlare, să își consolideze cunoștințele și să se pregătească pentru viitorul lor educațional. Pentru cei mai mici dintre ei, sunt organizate activități specifice perioadei de dezvoltare, care îi vor ajuta să își înceapă parcursul școlar cu încredere și cu un mic bagaj de cunoștințe.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În afara orelor de pregătire, copiii au ocazia să petreacă timp unii cu ceilalți într-un mediu plăcut și relaxant. În cadrul acestor întâlniri, ei se pot juca, pot socializa și pot interacționa cu alte persoane care sunt disponibile să le ofere sprijin și îndrumare în rezolvarea dificultăților sau nelămuririlor lor.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aceste activități săptămânale nu sunt doar o oportunitate pentru copii de a-și dezvolta abilitățile școlare și sociale, ci și un moment de comuniune și de întărire a legăturilor în cadrul comunității noastre. Prin implicarea și sprijinul tuturor celor implicați, aceste activități contribuie la crearea unei atmosfere de învățare pozitive și la promovarea valorilor de solidaritate și ajutor reciproc în rândul membrilor comunității noastre.
+<br><br><br><hr><hr><br>
+
+<div class="imagine-filtru2">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture9.png?raw=true" width="230" height="250">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture10.jpg?raw=true" width="230" height="250">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture12.jpg?raw=true" width="230" height="250">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture11.jpg?raw=true" width="230" height="250">
+</div>
+
+
+<br><br><br><hr><hr><br>
+
+</div>
+</div>
+<div class="slide-in-left">
+<div class="text1">
+			<h3><em>~CARAVANA RECICLĂRII CREATIVE – PlaYouth~</em></h3>
+			<br><br>
+</div>
+			<div class="p1">
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parteneriatul dintre ONG-ul PlaYouth și școli în cadrul programului "Caravana Reciclării Creative" reprezintă o oportunitate inestimabilă pentru elevi de a învăța și de a se implica activ în protejarea mediului înconjurător prin intermediul practicilor de reciclare creativă.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acest parteneriat aduce beneficii semnificative atât pentru elevi, cât și pentru comunitatea lor. Prin intermediul acestui program, elevii sunt încurajați să devină mai conștienți de impactul pe care îl au acțiunile lor asupra mediului și să adopte practici de consum responsabil și de gestionare a deșeurilor. Prin activități interactive și educaționale, cum ar fi atelierele de reciclare creativă și proiectele de conștientizare a problemelor legate de mediu, elevii devin agenți activi în promovarea sustenabilității și a protejării resurselor naturale.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parteneriatul cu ONG-ul PlaYouth oferă elevilor acces la resurse și expertiză în domeniul protecției mediului, ceea ce le permite să învețe și să se implice într-un mod interactiv și captivant. Prin intermediul activităților practice, elevii dobândesc competențe și abilități esențiale în domeniul reciclării și al conservării mediului, care îi pregătesc pentru a deveni cetățeni responsabili și activi în societatea noastră.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;De asemenea, parteneriatul cu ONG-ul PlaYouth aduce și beneficii pentru școli și pentru comunitatea în ansamblu. Prin intermediul programului "Caravana Reciclării Creative", școlile devin centre de excelentă în promovarea practicilor ecologice și în educarea unei noi generații de cetățeni responsabili și implicați în protejarea mediului înconjurător. Acest lucru contribuie la creșterea gradului de conștientizare și la schimbarea mentalităților în comunitate, facilitând tranziția către un mod de viață mai sustenabil și respectuos față de mediu.
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;În concluzie, parteneriatul dintre ONG-ul PlaYouth și școli în cadrul programului "Caravana Reciclării Creative" reprezintă un exemplu de colaborare eficientă și benefică pentru toate părțile implicate. Prin intermediul acestui parteneriat, elevii devin agenți activi în promovarea sustenabilității și în protejarea mediului înconjurător, contribuind astfel la construirea unei societăți mai echitabile și mai responsabile.
+<br><br><br><hr><hr>
+</div>
+</div>
+</div>
+
+<div id="activities" class="page">
+	<div class="slide-in-left">
+<div class="text1">
+			<h3><em>~Săptămâna verde~</em></h3>
+			<br><br>
+</div>
+			<div class="p1">
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anul acesta școlar a adus o nouă provocare pentru cadrele didactice și elevii școlii noastre: SĂPTĂMÂNA VERDE. Ne-am străduit ca de fiecare dată să aducem elevilor noștri activități interesante care să le cultive spiritul practic și conștiința ecologică. Săptămâna aceasta curțile școlilor noastre au devenit ”grădini fermecate” unde elevii și dascălii lor au făcut echipă, sălile de clasă au devenit ”cinematografe” ale unei „Românii sălbatice”  dezvăluindu-ne bogății nebănuite ale florei și faunei țării noastre (<a href="https://romaniasalbatica.ro/">România Sălbatică</a> ), copiii au devenit meșteri iscusiți de obiecte extraordinare confecționate din materiale reciclabile și, nu în ultimul rând, toate școlile au fost pline de entuziasmul copilăriei. 
+<br><br>
+<ul class="visual-list">
+    <li>
+        <div class="list-item">
+            <h4>„Călătoria micilor exploratori către sufletul naturii”</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>„Protecția mediului, colectare separată și reciclarea deșeurilor”- Managementul deșeurilor, consum și producție sustenabile</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Vizionarea filmului „Romania salbatica”</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Realizarea recipientelor de colectare creative- CARAVANA RECICLĂRII CREATIVE - PlaYouth</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Amenajarea zonei „Păsări fericite” - CARAVANA RECICLĂRII CREATIVE - PlaYouth</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Amenajarea zonei „Grădina minunată” - CARAVANA RECICLĂRII CREATIVE – PlaYouth</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>Amenajarea zonei „Lecturi inspirate” - CARAVANA RECICLĂRII CREATIVE – PlaYouth</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>„Natura, prietena noastră”</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>„Ne distrăm, mediul înconjurător îl protejăm!”</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>„Sădește o plantă și te vei bucura de fapta ta!”</h4>
+        </div>
+    </li>
+<li>
+        <div class="list-item">
+            <h4>„Coșul ecologic”</h4>
+        </div>
+    </li>
+</ul>
+
+
+
+
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Acestea sunt doar o parte din activitățile desfășurate cu elevii noștri. Așteptăm cu nerăbdare experiențele pe care le vom trăi în SĂPTĂMÂNA VERDE din anul școlar viitor și sperăm la o și mai mare implicare a tuturor elevilor noștri, dar și a părinților. Mulțumim tuturor celor care s-au implicat și ne-au sprijinit în derularea acțiunilor noastre!
+<br><br><hr><hr><br>
+
+<div class="imagine-filtru1">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture43.jpg?raw=true" width="155" height="175">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture44.jpg?raw=true" width="155" height="175">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture45.png?raw=true" width="155" height="175">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture47.png?raw=true" width="155" height="175">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture46.png?raw=true" width="155" height="175">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture42.jpg?raw=true" width="155" height="175">
+
+</div>
+
+<br><br><hr><hr><br>
+</div>
+</div>
+</div>
+
+<div id="about" class="page">
+	<div class="p1"> <strong>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UNITATEA ŞCOLARA: ŞCOALA PRIMARĂ NR. 2 SADINA
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ADRESA: COMUNA ROATA DE JOS, JUDEŢUL GIURGIU, Str. Republicii, nr. 6, Cod postal: 087195
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://maps.app.goo.gl/GXDYQPhy5qeXQNYu7">Adresa pe hartă</a>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TELEFON: +40246266062	
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAX: 0246266062
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-mail: <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKhpdKZMQTtlLxMchnLsBhTxTCBqSZlcndsccVMhTqlgLMcSHcRxrGBcJzGNQDqXJVddRhR"> scoala_roatadejos@yahoo.co.uk</a>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TIPUL SCOLII: Scoala Primară nr.2 Sadina, cursuri de zi
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PROGRAMUL SCOLII CU PUBLICUL: Luni-Vineri 8:00-12:00 & 13:00-16:30
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIMBA DE PREDARE: Româna
+</strong></div>
+<br><br><hr><hr><br>
+<div class="img-and-title">
+ 		 <img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture7.jpg?raw=true" width="150" height="112.5">
+  
+	<div class="text1"><h2>SCURT ISTORIC ȘI PREZENTARE</h2></div>
+	</div>
+	
+<br>
+<br><br><br><br>
+	<div class="p1">
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Printre crengile falnicului stejar, se zăresc ferestrele mari de o parte şi de  alta a frontonului cu balcon şi arcade brâncoveneşti, ale unei clădiri – adevărat centru de lumină pentru minţile celor mai mici locuitori ai comunei – Şcoala cu clasele I – VIII.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O şcoală cu vechime, cu tradiţie, o şcoală care se mândreşte cu trecutul ei, cu foştii săi elevi.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deşi cel mai vechi document prin care se atestă existenţa acestei unităţi şcolare datează din anul 1893; şcoala a existat şi înaintea acestei date, care a funcţionat într-o casă cu două camere şi o sală.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Multe schimbări a cunoscut şcoala noastră, de la învăţământ de 4 ani in 1890, s-a trecut la cel de 7, de 8 şi apoi de 10 ani, iar în anii 1989 – 1991 să funcţioneze şi învăţământ liceal seral – clasele a XI-a si a XII-a, precum şi clase de şcoală profesională.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bineînţeles că numărul copiilor a fost în creştere continuă, ajungând la câte 4 clase paralele în anii 1974 –76 cu un număr de peste 600 de elevi şi de 26 de cadre didactice.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pe teritoriul comunei Roata de Jos există la ora actuală mai multe școli: două pentru ciclul primar (clasele Pregătitoare-IV):
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Școala Primară nr 2 Sadina
+<br> 
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Școala Primară nr 1 Cătunu 
+<br>și una pentru ciclul gimnazial (clasele V-VIII)- Școala Gimnazială nr 1 Roata de Jos.
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Școala Sadina dispune de 4 săli e clasă, o cancelarie, grup sanitar, sală de sport, spațiu de recreere și joacă pentru copii. Transportul elevilor este asigurat cu ajutorul microbuzului școlar, cursele fiind efectuate dimineața, la prânz și după-amiaza. Elevii sunt însoțiți în fiecare zi și la fiecare cursă a microbuzului de către cadrele didactice ale școlii ( educatori, învățători).  
+<br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Efectivul elevilor care învață în această școală este de aproximativ 130 de elevi care învață în două schimburi: în programul de dimineață învață clasele pregătitoare, clasa I, clsa a II-a, iar după-amiază clasele a III-a și a patra. 
+</div>
+<br>
+<br><hr><hr><br>
+	<div class="text1">
+	<h3><em>~DEVIZA~</em></h3>
+	</div>
+<br>
+<br>
+<div class="img-and-title img1">
+	
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture3.jpg?raw=true" width="150" height="112.5"></div>
+<div class="p1">
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Împreună pentru copiii noștri!</strong><br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Școala Primară nr 2 Sadina este locul unde fiecare copil este important, unde se dezvoltă armonios și are acces la șanse egale de dezvoltare personală și educațională. Ne dorim și urmărim formarea unui copil pregătit și adaptat socio-profesional care, pe lângă bagajul de cunoștințe teoretice, părăsește școala și cu un set de valori și atitudini care să-i dea posibilitatea să se adapteze permanent la societatea actuală, aflată într-o continuă schimbare. Aici este locul unde copiii prind rădăcini și le cresc aripi.
+</div>
+<br><br><hr><hr><br>
+	<div class="text1">
+	<h3><em>~MISIUNEA ȘCOLII~</em></h3>
+	</div>
+	<div class="p1">
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Misiunea şcolii este să asigure o educaţie de calitate pentru dezvoltarea individului, în vederea integrării acestuia în plan social, pentru a deveni cetăţeni activi şi responsabili, deplin conştienţi de propria lor valoare.
+<br>
+<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>Performanță</em></strong><br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;susține performanța în toate domeniile cunoașterii, în funcție de interesul și aptitudinile personale ale fiecărui copil.<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>Egalitate</em></strong><br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;urmărește să dezvolte o minicomunitate, o școală incluzivă, care să ofere opotunități egale și sprijin pentru dezvoltara personală a fiecărui elev.<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>Eficiență</em></strong><br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;utilizează un management eficient al tuturor resurselor, prin stimularea lucrului în echipă și valorizarea resursei umane.<br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>Dezvoltare</em></strong><br>
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;își propune să pună la dispoziția beneficiarilor oportunități de dezvoltare și educație de calitate.<br>
+	</div>
+<br><br><hr><hr><br>
+<br>
+<div class="imagine-filtru">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture2.jpg?raw=true" width="350" height="205">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture4.jpg?raw=true" width="350" height="205">
+	<img src="https://github.com/siteScoalaSadina/imagini.site/blob/main/Picture6.jpg?raw=true" width="380" height="205">
+
+
+</div>
+<br><br><hr><hr><br>
+<br>
+</div>
+
+	<script>
+		function showPage(pageName) {
+    
+    			var pages = document.getElementsByClassName("page");
+    			for (var i = 0; i < pages.length; i++) {
+        			pages[i].style.display = "none";
+    			}
+    
+    			document.getElementById(pageName).style.display = "block";
+		}
+	</script>
+
+
+</body>
+</html>
